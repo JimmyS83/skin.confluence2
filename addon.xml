@@ -2,6 +2,7 @@
 <addon id="skin.confluence2" version="4.7.1" name="Confluence (edit)" provider-name="Jezz_X, Team Kodi">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
+		<import addon="service.skin.widgets" version="0.0.32"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
