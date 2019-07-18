@@ -1,4 +1,4 @@
-# Kodi Media Center language file
+﻿# Kodi Media Center language file
 # Addon Name: Confluence
 # Addon id: skin.confluence2
 # Addon Provider: Jezz_X, Team Kodi
@@ -647,3 +647,18 @@ msgstr "Název profilu"
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "Avatar profilu"
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#31168"
+msgid "Mód zobrazení"
+msgstr ""
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#31169"
+msgid "Pixel formát"
+msgstr ""
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#31170"
+msgid "EOTF & Gamut"
+msgstr "" 

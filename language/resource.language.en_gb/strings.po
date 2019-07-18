@@ -1,4 +1,4 @@
-# Kodi Media Center language file
+﻿# Kodi Media Center language file
 # Addon Name: Confluence
 # Addon id: skin.confluence2
 # Addon Provider: Jezz_X, Team Kodi
@@ -731,3 +731,18 @@ msgstr ""
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr ""
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#31168"
+msgid "Display mode"
+msgstr ""
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#31169"
+msgid "Pixel format"
+msgstr ""
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#31170"
+msgid "EOTF & Gamut"
+msgstr "" 
