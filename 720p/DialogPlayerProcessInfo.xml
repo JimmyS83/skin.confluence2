@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <onload>RunScript(script.amlogic.displayinfo)</onload>
+  <onload condition="System.HasAddon(service.coreelec.settings)">RunScript(script.amlogic.displayinfo)</onload>
 	<defaultcontrol always="true">100</defaultcontrol>
 	<include>dialogeffect</include>
 	<depth>DepthOSD</depth>
@@ -357,7 +357,7 @@
 				<top>385</top>
 				<width>165</width>
 				<height>25</height>
-				<label>$LOCALIZE[22011]:</label>
+				<label>$LOCALIZE[22011]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
