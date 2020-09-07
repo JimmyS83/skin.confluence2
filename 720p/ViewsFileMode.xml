@@ -46,7 +46,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Window.IsVisible(Videos)</visible>
 					</control>
 					<control type="label">
@@ -59,7 +59,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
@@ -115,7 +115,7 @@
 						<width>200</width>
 						<height>31</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
-						<visible>Control.HasFocus(50) + !String.IsEmpty(ListItem.Label2)</visible>
+						<visible>Control.HasFocus(50) + !String.IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="label">
 						<left>10</left>
@@ -139,7 +139,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Window.IsVisible(Videos)</visible>
 					</control>
 					<control type="label">
@@ -152,7 +152,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
@@ -547,7 +547,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Window.IsVisible(Videos)</visible>
 					</control>
 					<control type="label">
@@ -560,7 +560,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
@@ -616,7 +616,7 @@
 						<width>200</width>
 						<height>31</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
-						<visible>Control.HasFocus(51) + !String.IsEmpty(ListItem.Label2)</visible>
+						<visible>Control.HasFocus(51) + !String.IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -648,7 +648,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Window.IsVisible(Videos)</visible>
 					</control>
 					<control type="label">
@@ -661,7 +661,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
