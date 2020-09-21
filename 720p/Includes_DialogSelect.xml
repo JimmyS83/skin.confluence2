@@ -161,19 +161,19 @@
 				<onright>61</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="92" width="750">
+				<itemlayout height="75" width="750">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>750</width>
-						<height>86</height>
+						<height>70</height>
 						<texture border="5">button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<left>2</left>
 						<top>3</top>
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<bordertexture border="3">black-back2.png</bordertexture>
@@ -189,7 +189,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="textbox">
 						<left>90</left>
@@ -203,12 +203,12 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="92" width="750">
+				<focusedlayout height="75" width="750">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>750</width>
-						<height>86</height>
+						<height>70</height>
 						<texture border="5">button-nofocus.png</texture>
 						<visible>!Control.HasFocus(6)</visible>
 						<include>VisibleFadeEffect</include>
@@ -217,7 +217,7 @@
 						<left>0</left>
 						<top>0</top>
 						<width>750</width>
-						<height>86</height>
+						<height>70</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(6)</visible>
 						<include>VisibleFadeEffect</include>
@@ -225,8 +225,8 @@
 					<control type="image">
 						<left>2</left>
 						<top>3</top>
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<bordertexture border="3">black-back2.png</bordertexture>
@@ -242,7 +242,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="textbox">
 						<left>90</left>
