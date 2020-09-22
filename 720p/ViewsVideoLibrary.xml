@@ -1256,7 +1256,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>Window.IsVisible(Videos)</visible>
-						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(Videos)]">conditional</animation>
 					</control>
 					<control type="image">
 						<left>515</left>
@@ -1265,7 +1265,7 @@
 						<height>26</height>
 						<texture>$VAR[MediaInfoOverlayVar]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+						<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(Videos)</visible>
 					</control>
 					<control type="image">
 						<left>555</left>
@@ -1335,7 +1335,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>Window.IsVisible(Videos)</visible>
-						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
+						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(Videos)]">conditional</animation>
 					</control>
 					<control type="image">
 						<left>515</left>
@@ -1344,7 +1344,7 @@
 						<height>26</height>
 						<texture>$VAR[MediaInfoOverlayVar]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+						<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(Videos)</visible>
 					</control>
 					<control type="image">
 						<left>555</left>
@@ -1400,7 +1400,7 @@
 					<left>0</left>
 					<top>0</top>
 					<width>510</width>
-					<height>325</height>
+					<height>286</height>
 					<aspectratio>scale</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
