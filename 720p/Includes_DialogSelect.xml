@@ -176,8 +176,6 @@
 						<height>70</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<bordertexture border="3">black-back.png</bordertexture>
-						<bordersize>2</bordersize>
 					</control>
 					<control type="label">
 						<left>90</left>
@@ -229,8 +227,6 @@
 						<height>70</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<bordertexture border="3">black-back.png</bordertexture>
-						<bordersize>2</bordersize>
 					</control>
 					<control type="label">
 						<left>90</left>
