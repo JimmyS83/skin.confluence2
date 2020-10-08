@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
+	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | Container(9000).Hasfocus(15) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus | ControlGroup(9018).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="ControlGroup(9011).HasFocus">SetProperty(MusicDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(3)">ClearProperty(MusicDirectLink)</onunload>
 	<controls>
+        <control type="list" id="90180">
+			<left>-10</left>
+			<top>-10</top>
+			<width>1</width>
+			<height>1</height>
+			<viewtype label="535">list</viewtype>
+			<itemlayout height="1" width="1">
+			</itemlayout>
+			<focusedlayout height="1" width="1">
+			</focusedlayout>
+			<content target="video" limit="7">library://video/scc/</content>
+		</control>
 		<control type="list" id="90160">
 			<left>-10</left>
 			<top>-10</top>
@@ -813,6 +825,14 @@
 					<!-- Buttons for the grouplist -->
 					<include>HomeSubMenuVideos</include>
 				</control>
+                <control type="grouplist" id="9018">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9018</onleft>
+					<onright>9018</onright>
+                    <visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90180).ListItemNoWrap(0).Label)</visible>
+                    <!-- Buttons for the grouplist--> 
+					<include>HomeSubMenuSCC</include>
+				</control>
 				<control type="grouplist" id="9016">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9016</onleft>
@@ -1027,6 +1047,14 @@
 						<thumb/>
 						<visible>[!Skin.HasSetting(HomeMenuNoVideosButton) + !System.IsMaster] | [!Skin.HasSetting(MasterHomeMenuNoVideosButton) + System.IsMaster]</visible>
 					</item>
+                    <item id="15">
+						<label>SCC</label>
+						<!-- <onclick>ActivateWindow(Videos,library://video/scc/,return)</onclick> -->
+                        <onclick>RunAddon(plugin.video.stream-cinema-2-release)</onclick>
+						<icon/>
+						<thumb/>
+						<visible>System.HasAddon(plugin.video.stream-cinema-2-release)</visible>
+					</item>
 					<item id="10">
 						<label>31954</label>
 						<onclick condition="System.IsMaster | !Skin.HasSetting(HomeMenuMovieUsePlaylist)">ActivateWindow(Videos,MovieTitles,return)</onclick>
@@ -1105,6 +1133,18 @@
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonItemsVideos</include>
+				</content>
+			</control>
+            <control type="fixedlist" id="707">
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="String.IsEqual(Container(707).NumItems,2) | String.IsEqual(Container(707).NumItems,4)">conditional</animation>
+				<visible>Container(9000).HasFocus(15)</visible>
+				<onleft>707</onleft>
+				<onright>707</onright>
+				<onup>9001</onup>
+				<ondown>21</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonItemsSCC</include>
 				</content>
 			</control>
 			<control type="fixedlist" id="703">

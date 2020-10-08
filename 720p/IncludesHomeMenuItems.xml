@@ -46,6 +46,53 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
+    <include name="HomeSubMenuSCC">
+		<control type="image" id="90181">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90182">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+		</control>
+		<control type="button" id="90183">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="90184">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="90185">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="90186">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="90187">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="image" id="90188">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
 	<include name="HomeSubMenuMovies">
 		<control type="image" id="90161">
 			<width>35</width>
@@ -429,6 +476,43 @@
 			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton5))]</icon>
 			<thumb/>
 			<visible>!String.IsEmpty(Skin.String(HomeVideosButton5))</visible>
+		</item>
+	</include>
+    <include name="HomeAddonItemsSCC">
+		<item>
+			<label>$INFO[Container(90180).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<icon>$INFO[system.addonicon(plugin.video.stream-cinema-2-release)]</icon>
+            <visible>!String.IsEmpty(Container(90180).ListItemNoWrap(7).Label)</visible>
+			<thumb/>
+		</item>
+		<item>
+			<label>$INFO[Container(90180).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<icon>$INFO[system.addonicon(plugin.video.stream-cinema-2-release)]</icon>
+            <visible>!String.IsEmpty(Container(90180).ListItemNoWrap(8).Label)</visible>
+			<thumb/>
+		</item>
+		<item>
+			<label>$INFO[Container(90180).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<icon>$INFO[system.addonicon(plugin.video.stream-cinema-2-release)]</icon>
+            <visible>!String.IsEmpty(Container(90180).ListItemNoWrap(9).Label)</visible>
+			<thumb/>
+		</item>
+		<item>
+			<label>$INFO[Container(90180).ListItemNoWrap(10).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(10).FileNameAndPath],return)</onclick>
+			<icon>$INFO[system.addonicon(plugin.video.stream-cinema-2-release)]</icon>
+            <visible>!String.IsEmpty(Container(90180).ListItemNoWrap(10).Label)</visible>
+			<thumb/>
+		</item>
+		<item>
+			<label>$INFO[Container(90180).ListItemNoWrap(11).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(11).FileNameAndPath],return)</onclick>
+			<icon>$INFO[system.addonicon(plugin.video.stream-cinema-2-release)]</icon>
+            <visible>!String.IsEmpty(Container(90180).ListItemNoWrap(11).Label)</visible>
+			<thumb/>
 		</item>
 	</include>
 	<include name="HomeAddonItemsMusic">
