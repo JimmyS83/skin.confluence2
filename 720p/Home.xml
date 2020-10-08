@@ -18,6 +18,18 @@
 			</focusedlayout>
 			<content target="video" limit="7">library://video/scc/</content>
 		</control>
+         <control type="list" id="90190">
+			<left>-10</left>
+			<top>-10</top>
+			<width>1</width>
+			<height>1</height>
+			<viewtype label="535">list</viewtype>
+			<itemlayout height="1" width="1">
+			</itemlayout>
+			<focusedlayout height="1" width="1">
+			</focusedlayout>
+			<content target="video" limit="7">library://video/scc2/</content>
+		</control>
 		<control type="list" id="90160">
 			<left>-10</left>
 			<top>-10</top>
@@ -1137,7 +1149,7 @@
 			</control>
             <control type="fixedlist" id="707">
 				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="String.IsEqual(Container(707).NumItems,2) | String.IsEqual(Container(707).NumItems,4)">conditional</animation>
-				<visible>Container(9000).HasFocus(15)</visible>
+				<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90190).ListItemNoWrap(0).Label)</visible>
 				<onleft>707</onleft>
 				<onright>707</onright>
 				<onup>9001</onup>
