@@ -762,11 +762,11 @@
 	</include>
 	<include name="ButtonHomeSubCommonValues">
 		<height>35</height>
-		<width>180</width>
-		<textwidth>195</textwidth>
+		<width>200</width>
+		<textwidth>215</textwidth>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>font12</font>
+		<font>font13</font>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<scroll>true</scroll>
@@ -1593,27 +1593,19 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>180</width>
+				<width>200</width>
 				<height>120</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="5">button-nofocus.png</bordertexture>
 				<bordersize>3</bordersize>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 			</control>
-			<control type="image">
-				<left>5</left>
-				<top>120</top>
-				<width>170</width>
-				<height>110</height>
-				<aspectratio aligny="top">keep</aspectratio>
-				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
-			</control>
 			<control type="label">
 				<left>1</left>
 				<top>125</top>
-				<width>180</width>
+				<width>200</width>
 				<height>20</height>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>grey2</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -1624,7 +1616,7 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>180</width>
+				<width>200</width>
 				<height>120</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="5">button-nofocus.png</bordertexture>
@@ -1635,7 +1627,7 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>180</width>
+				<width>200</width>
 				<height>120</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="5">folder-focus.png</bordertexture>
@@ -1643,20 +1635,13 @@
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ControlGroup(9002).HasFocus</visible>
 			</control>
-			<control type="image">
-				<left>5</left>
-				<top>120</top>
-				<width>170</width>
-				<height>110</height>
-				<aspectratio aligny="top">keep</aspectratio>
-				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
-			</control>
+			
 			<control type="label">
 				<left>1</left>
 				<top>125</top>
-				<width>180</width>
+				<width>200</width>
 				<height>20</height>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -1666,9 +1651,9 @@
 			<control type="label">
 				<left>1</left>
 				<top>125</top>
-				<width>180</width>
+				<width>200</width>
 				<height>20</height>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>grey2</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
