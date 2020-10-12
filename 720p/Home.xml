@@ -541,16 +541,6 @@
 				<effect type="fade" start="100" end="0" time="225" />
 			</animation>
 			<visible>String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
-			<control type="image">
-				<description>Background End image</description>
-				<left>0</left>
-				<top>0</top>
-				<width>35</width>
-				<height>35</height>
-				<colordiffuse>CCFFFFFF</colordiffuse>
-				<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
-				<animation effect="slide" start="0,0" end="145,0" time="0" condition="!System.HasAddon(script.globalsearch)">Conditional</animation>
-			</control>
 			<control type="radiobutton" id="608">
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<description>Global Search</description>
@@ -828,7 +818,7 @@
 				<left>0</left>
 				<top>70</top>
 				<onup>9000</onup>
-				<ondown>9002</ondown>
+				<ondown>9007</ondown>
 				<control type="grouplist" id="9010">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9010</onleft>
@@ -916,6 +906,21 @@
 					<visible>Container(9000).HasFocus(1)</visible>
 					<!--Buttons for the grouplist -->
 					<include>HomeSubMenuAddons</include>
+				</control>
+			</control>
+            <control type="group" id="9007">
+				<depth>DepthMenu-</depth>
+				<left>0</left>
+				<top>105</top>
+				<onup>9001</onup>
+				<ondown>9002</ondown>
+                <control type="grouplist" id="9019">
+					<include>HomeSubMenuCommonValues2</include>
+					<onleft>9019</onleft>
+					<onright>9019</onright>
+                    <visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90190).ListItemNoWrap(0).Label)</visible>
+                    <!-- Buttons for the grouplist--> 
+					<include>HomeSubMenuSCC2</include>
 				</control>
 			</control>
 			<control type="image">
@@ -1133,30 +1138,18 @@
 		</control>
 		<control type="group" id="9002">
 			<depth>DepthMenu</depth>
-			<onup>9001</onup>
+			<onup>9007</onup>
 			<ondown>21</ondown>
 			<control type="fixedlist" id="700">
 				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="String.IsEqual(Container(700).NumItems,2) | String.IsEqual(Container(700).NumItems,4)">conditional</animation>
 				<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)</visible>
 				<onleft>700</onleft>
 				<onright>700</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonItemsVideos</include>
-				</content>
-			</control>
-            <control type="fixedlist" id="707">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="String.IsEqual(Container(707).NumItems,2) | String.IsEqual(Container(707).NumItems,4)">conditional</animation>
-				<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90190).ListItemNoWrap(0).Label)</visible>
-				<onleft>707</onleft>
-				<onright>707</onright>
-				<onup>9001</onup>
-				<ondown>21</ondown>
-				<include>HomeAddonsCommonLayout</include>
-				<content>
-					<include>HomeAddonItemsSCC</include>
 				</content>
 			</control>
 			<control type="fixedlist" id="703">
@@ -1164,7 +1157,7 @@
 				<visible>Container(9000).HasFocus(3)</visible>
 				<onleft>703</onleft>
 				<onright>703</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1176,7 +1169,7 @@
 				<visible>Container(9000).HasFocus(4)</visible>
 				<onleft>704</onleft>
 				<onright>704</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1188,7 +1181,7 @@
 				<visible>Container(9000).HasFocus(1)</visible>
 				<onleft>705</onleft>
 				<onright>705</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1200,7 +1193,7 @@
 				<visible>Container(9000).HasFocus(14)</visible>
 				<onleft>706</onleft>
 				<onright>706</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
