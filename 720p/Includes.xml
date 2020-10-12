@@ -781,6 +781,19 @@
 		<height>35</height>
 		<align>center</align>
 		<onup>9000</onup>
+		<ondown>9007</ondown>
+		<itemgap>0</itemgap>
+		<orientation>Horizontal</orientation>
+		<animation effect="slide" start="0,-40" end="0,0" delay="150" time="150" tween="quadratic" easing="out">Visible</animation>
+		<animation effect="slide" start="0,0" end="0,-40" time="150" tween="quadratic" easing="out">Hidden</animation>
+	</include>
+    <include name="HomeSubMenuCommonValues2">
+		<left>0</left>
+		<top>0</top>
+		<width>1280</width>
+		<height>35</height>
+		<align>center</align>
+		<onup>9001</onup>
 		<ondown>9002</ondown>
 		<itemgap>0</itemgap>
 		<orientation>Horizontal</orientation>
