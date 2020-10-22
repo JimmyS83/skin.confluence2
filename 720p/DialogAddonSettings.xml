@@ -184,18 +184,6 @@
 					<onup>5</onup>
 					<ondown>5</ondown>
 				</control>
-				<control type="button" id="20">
-					<description>Settings Level Button</description>
-					<top>0</top>
-					<width>186</width>
-					<height>40</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<onclick>SettingsLevelChange</onclick>
-					<onup>5</onup>
-					<ondown>5</ondown>
-				</control>
 			</control>
 		</control>
 	</controls>
