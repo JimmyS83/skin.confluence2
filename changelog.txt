@@ -1,13 +1,7 @@
-[B]4.7.1[/B]
+[B]4.6.10[/B]
+- Fix PVR radio record button
+- Fix PVR recording label
 
-- Add support for PVR reminders
-- Fix / add new buttons in PVR information window
-- Update PVR group manager dialog with latest changes
-
-[B]4.7.0[/B]
-
-- Added chapter markers to progress bar
-- Uppercase Season and Episode indicators on home Recently Added Episodes
 
 [B]4.6.9[/B]
 
