@@ -175,7 +175,12 @@
 			<control type="image" id="2200">
 				<width>270</width>
 				<texture/>
-				<visible>VideoPlayer.HasMenu + !VideoPlayer.Content(LiveTV)</visible>
+				<visible>VideoPlayer.HasMenu + !VideoPlayer.Content(LiveTV) + !Player.HasPrograms</visible>
+			</control>
+			<control type="image" id="2700">
+				<width>215</width>
+				<texture/>
+				<visible>VideoPlayer.HasMenu + !VideoPlayer.Content(LiveTV) + Player.HasPrograms</visible>
 			</control>
 			<control type="image" id="2300">
 				<width>160</width>
@@ -185,7 +190,12 @@
 			<control type="image" id="2600">
 				<width>325</width>
 				<texture/>
-				<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.HasMenu</visible>
+				<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.HasMenu + !Player.HasPrograms</visible>
+			</control>
+			<control type="image" id="2800">
+				<width>270</width>
+				<texture/>
+				<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.HasMenu + Player.HasPrograms</visible>
 			</control>
 			<control type="button" id="255">
 				<enable>VideoPlayer.IsStereoscopic</enable>
@@ -224,6 +234,16 @@
 				<texturefocus>OSDAudioFO.png</texturefocus>
 				<texturenofocus>OSDAudioNF.png</texturenofocus>
 				<onclick>ActivateWindow(OSDAudioSettings)</onclick>
+			</control>
+			<control type="button" id="256">
+				<width>55</width>
+				<height>55</height>
+				<label>Vybrat program</label>
+				<font/>
+				<texturefocus>OSDRateFO.png</texturefocus>
+				<texturenofocus>OSDRateNF.png</texturenofocus>
+				<onclick>PlayerProgramSelect</onclick>
+				<visible>Player.HasPrograms</visible>
 			</control>
 			<control type="button" id="253">
 				<width>55</width>
