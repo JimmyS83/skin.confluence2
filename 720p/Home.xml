@@ -957,7 +957,8 @@
 				<height>60</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onup>608</onup>
+				<onup condition="System.AddonIsEnabled(script.globalsearch)">608</onup>
+				<onup condition="!System.AddonIsEnabled(script.globalsearch)">603</onup>
 				<ondown>9001</ondown>
 				<pagecontrol/>
 				<scrolltime>300</scrolltime>
