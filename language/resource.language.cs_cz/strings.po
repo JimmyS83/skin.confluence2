@@ -662,3 +662,23 @@ msgstr ""
 msgctxt "#31170"
 msgid "EOTF & Gamut"
 msgstr "" 
+
+msgctxt "#31171"
+msgid "Zobrazení originálního názvu"
+msgstr "Zobrazení originálního názvu" 
+
+msgctxt "#31172"
+msgid "Beze změny"
+msgstr "Beze změny" 
+
+msgctxt "#31173"
+msgid "Originální název (Český název)"
+msgstr "Originální název (Český název)" 
+
+msgctxt "#31174"
+msgid "Český název (Originální název)"
+msgstr "Český název (Originální název)" 
+
+msgctxt "#31175"
+msgid "Jen originální název"
+msgstr "Jen originální název" 
