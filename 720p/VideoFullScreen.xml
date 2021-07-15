@@ -191,7 +191,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>Studio label</description>
-					<left>20</left>
+					<left>0</left>
 					<top>30</top>
 					<width>910</width>
 					<height>25</height>
@@ -204,7 +204,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>TV Show label</description>
-					<left>20</left>
+					<left>0</left>
 					<top>30</top>
 					<width>910</width>
 					<height>25</height>
@@ -217,7 +217,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>Music Info label</description>
-					<left>20</left>
+					<left>0</left>
 					<top>30</top>
 					<width>910</width>
 					<height>25</height>
@@ -230,7 +230,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>LiveTV Info label</description>
-					<left>20</left>
+					<left>0</left>
 					<top>30</top>
 					<width>910</width>
 					<height>25</height>
@@ -242,7 +242,7 @@
 					<visible>VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording</visible>
 				</control>
 				<control type="grouplist" id="1">
-					<left>20</left>
+					<left>0</left>
 					<top>60</top>
 					<width>910</width>
 					<height>35</height>
@@ -259,7 +259,16 @@
 						<scroll>true</scroll>
 					</control>
 					<control type="image" id="1">
+						<description>Video Codec Image</description>
+						<width>80</width>
+						<height>35</height>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>!Player.ChannelPreviewActive</visible>
+						<texture>$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
+					</control>
+					<control type="image" id="1">
 						<description>Video Resolution Image</description>
+						<left>5</left>
 						<width>50</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
