@@ -650,13 +650,13 @@ msgstr "Avatar profilu"
 
 #: /720p/DialogPlayerProcessInfo.xml
 msgctxt "#31168"
-msgid "Mód zobrazení"
-msgstr ""
+msgid "Display mode"
+msgstr "Mód zobrazení"
 
 #: /720p/DialogPlayerProcessInfo.xml
 msgctxt "#31169"
-msgid "Pixel formát"
-msgstr ""
+msgid "Pixel format"
+msgstr "Pixel formát"
 
 #: /720p/DialogPlayerProcessInfo.xml
 msgctxt "#31170"
@@ -664,21 +664,25 @@ msgid "EOTF & Gamut"
 msgstr "" 
 
 msgctxt "#31171"
-msgid "Zobrazení originálního názvu"
+msgid "Title format"
 msgstr "Zobrazení originálního názvu" 
 
 msgctxt "#31172"
-msgid "Beze změny"
+msgid "No change"
 msgstr "Beze změny" 
 
 msgctxt "#31173"
-msgid "Originální název (Český název)"
+msgid "Original title (Czech title)"
 msgstr "Originální název (Český název)" 
 
 msgctxt "#31174"
-msgid "Český název (Originální název)"
+msgid "Czech title (Original title)"
 msgstr "Český název (Originální název)" 
 
 msgctxt "#31175"
-msgid "Jen originální název"
+msgid "Only original title"
 msgstr "Jen originální název" 
+
+msgctxt "#31176"
+msgid "ČSFD comments"
+msgstr "Komentáře ČSFD"
