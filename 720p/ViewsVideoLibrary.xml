@@ -1472,7 +1472,7 @@
 					<top>335</top>
 					<width>100</width>
 					<height>25</height>
-					<label fallback="416">$INFO[listitem.Duration]</label>
+					<label fallback="-">$INFO[listitem.Duration]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
