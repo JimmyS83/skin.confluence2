@@ -78,20 +78,7 @@
 				<onclick>PlayerControl(Previous)</onclick>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
-			<control type="button" id="201">
-				<width>55</width>
-				<height>55</height>
-				<label>31354</label>
-				<font/>
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
-				<enable>Player.SeekEnabled</enable>
-				<animation effect="fade" start="100" end="50" time="75" condition="!Player.SeekEnabled">Conditional</animation>
-				<onclick condition="!Player.Paused + !Player.IsTempo">PlayerControl(Rewind)</onclick>
-				<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(Play)</onclick>
-				<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(TempoDown)</onclick>
-				<onclick condition="Player.IsTempo + Player.TempoEnabled">PlayerControl(TempoDown)</onclick>
-			</control>
+			
 			<control type="togglebutton" id="202">
 				<width>55</width>
 				<height>55</height>
@@ -116,20 +103,7 @@
 				<texturenofocus>OSDStopNF.png</texturenofocus>
 				<onclick>PlayerControl(Stop)</onclick>
 			</control>
-			<control type="button" id="204">
-				<width>55</width>
-				<height>55</height>
-				<label>31353</label>
-				<font/>
-				<texturefocus>OSDForwardFO.png</texturefocus>
-				<texturenofocus>OSDForwardNF.png</texturenofocus>
-				<enable>Player.SeekEnabled</enable>
-				<animation effect="fade" start="100" end="50" time="75" condition="!Player.SeekEnabled">Conditional</animation>
-				<onclick condition="!Player.Paused + !Player.IsTempo">PlayerControl(Forward)</onclick>
-				<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(Play)</onclick>
-				<onclick condition="Player.Paused + Player.TempoEnabled">PlayerControl(TempoUp)</onclick>
-				<onclick condition="Player.IsTempo + Player.TempoEnabled">PlayerControl(TempoUp)</onclick>
-			</control>
+			
 			<control type="button" id="205">
 				<width>55</width>
 				<height>55</height>
@@ -173,27 +147,27 @@
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="image" id="2200">
-				<width>270</width>
+				<width>380</width>
 				<texture/>
 				<visible>VideoPlayer.HasMenu + !VideoPlayer.Content(LiveTV) + !Player.HasPrograms</visible>
 			</control>
 			<control type="image" id="2700">
-				<width>215</width>
+				<width>325</width>
 				<texture/>
 				<visible>VideoPlayer.HasMenu + !VideoPlayer.Content(LiveTV) + Player.HasPrograms</visible>
 			</control>
 			<control type="image" id="2300">
-				<width>160</width>
+				<width>270</width>
 				<texture/>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="image" id="2600">
-				<width>325</width>
+				<width>435</width>
 				<texture/>
 				<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.HasMenu + !Player.HasPrograms</visible>
 			</control>
 			<control type="image" id="2800">
-				<width>270</width>
+				<width>380</width>
 				<texture/>
 				<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.HasMenu + Player.HasPrograms</visible>
 			</control>
