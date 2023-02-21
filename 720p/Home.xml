@@ -1083,7 +1083,7 @@
                         <onclick>RunAddon(plugin.video.stream-cinema-2-release)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>System.HasAddon(plugin.video.stream-cinema-2-release)</visible>
+						<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release)</visible>
 					</item>
 					<item id="10">
 						<label>31954</label>
