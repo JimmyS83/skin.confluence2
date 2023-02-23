@@ -174,7 +174,7 @@
 						<top>3</top>
 						<width>70</width>
 						<height>70</height>
-						<texture>$INFO[Listitem.Icon]</texture>
+						<texture>$VAR[DialogSelectImage]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
@@ -225,7 +225,7 @@
 						<top>3</top>
 						<width>70</width>
 						<height>70</height>
-						<texture>$INFO[Listitem.Icon]</texture>
+						<texture>$VAR[DialogSelectImage]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
