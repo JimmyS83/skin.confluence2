@@ -328,6 +328,18 @@ msgctxt "#31145"
 msgid "playlist path"
 msgstr "cesta k seznamu stop"
 
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr "Skrýt tlačítka hlavní obrazovky"
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr "Skrýt oblíbené"
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr "Skrýt hledání"
+
 msgctxt "#31200"
 msgid "Shortcuts"
 msgstr "Zkratky"

@@ -371,13 +371,13 @@ msgstr ""
 
 msgctxt "#31147"
 msgid "Hide - Favourites"
-msgstr ""\
+msgstr ""
 
 msgctxt "#31148"
 msgid "Hide - Search"
 msgstr ""
 
-#empty strings from id 31149 to 31199
+#empty strings from id 31146 to 31199
 
 msgctxt "#31200"
 msgid "Shortcuts"
