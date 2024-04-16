@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">7</defaultcontrol>
+	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
 		<left>338</left>
 		<top>45</top>
@@ -206,12 +206,6 @@
 				<label>19190</label>
 				<visible>Window.IsActive(PVRGuideInfo)</visible>
 			</control>
-			<control type="button" id="5">
-				<description>Switch to Channel</description>
-				<include>ButtonInfoDialogsCommonValues</include>
-				<label>19165</label>
-				<visible>Window.IsActive(PVRGuideInfo)</visible>
-			</control>
 			<control type="button" id="8">
 				<description>Play recording</description>
 				<include>ButtonInfoDialogsCommonValues</include>
@@ -234,6 +228,12 @@
 				<description>OK</description>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>186</label>
+			</control>
+			<control type="button" id="5">
+				<description>Switch to Channel</description>
+				<include>ButtonInfoDialogsCommonValues</include>
+				<label>19165</label>
+				<visible>Window.IsActive(PVRGuideInfo)</visible>
 			</control>
 		</control>
 	</controls>
