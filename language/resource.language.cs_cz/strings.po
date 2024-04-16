@@ -120,7 +120,7 @@ msgstr ""
 
 msgctxt "#31021"
 msgid "Movie title format"
-msgstr ""
+msgstr "Zobrazení názvu filmu"
 
 # empty strings from id 31018 to 31021
 msgctxt "#31022"
@@ -157,7 +157,7 @@ msgstr "Fanouškovské umění"
 
 msgctxt "#31030"
 msgid "No changes"
-msgstr ""
+msgstr "Beze změn"
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -173,15 +173,15 @@ msgstr "Informace"
 
 msgctxt "#31034"
 msgid "Original title (Localised title)"
-msgstr ""
+msgstr "Originální název (Český název)"
 
 msgctxt "#31035"
 msgid "Localised title (Original title)"
-msgstr ""
+msgstr "Český název (Originální název)"
 
 msgctxt "#31036"
 msgid "Just Original title"
-msgstr ""
+msgstr "Jen originální název"
 
 msgctxt "#31037"
 msgid "Select + X"
