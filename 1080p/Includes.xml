@@ -653,6 +653,10 @@
 		<value condition="ListItem.HasVideoVersions">flagging/video/overlay_versions.png</value>
 		<value condition="ListItem.HasVideoExtras">flagging/video/overlay_extras.png</value>
 	</variable>
+	<variable name="SubtitleLang">
+		<value condition="String.IsEmpty(VideoPlayer.SubtitlesLanguage)">unk</value>
+		<value condition="!String.IsEmpty(VideoPlayer.SubtitlesLanguage)">$INFO[VideoPlayer.SubtitlesLanguage]</value>
+	</variable>
 	<!-- INCLUDES -->
 	<include name="MusicInfoPanel">
 		<control type="panel" id="50">
