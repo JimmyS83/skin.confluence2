@@ -1424,7 +1424,7 @@
 					<top>0</top>
 					<width>765</width>
 					<height>429</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$VAR[FanartThumb]</texture>
 					<visible>Container.Content(Movies)</visible>
@@ -1436,7 +1436,7 @@
 					<top>0</top>
 					<width>765</width>
 					<height>438</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$VAR[FanartThumb]</texture>
 					<visible>Container.Content(TVShows) | Container.Content(Videos)</visible>
@@ -1567,7 +1567,7 @@
 					<top>0</top>
 					<width>765</width>
 					<height>429</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$VAR[PosterThumb]</texture>
 					<visible>Container.Content(Movies)</visible>
@@ -1579,7 +1579,7 @@
 					<top>0</top>
 					<width>765</width>
 					<height>429</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$VAR[PosterThumb]</texture>
 					<visible>Container.Content(TVShows) | Container.Content(Videos)</visible>
@@ -1738,7 +1738,7 @@
 					<top>0</top>
 					<width>765</width>
 					<height>429</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture infill="false" border="8">ThumbShadow.png</bordertexture>
