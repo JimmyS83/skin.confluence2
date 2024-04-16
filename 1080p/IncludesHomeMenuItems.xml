@@ -46,6 +46,102 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
+	<include name="HomeSubMenuSCC">
+		<control type="image" id="90181">
+			<width>53</width>
+			<height>53</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90182">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="90183">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="90184">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="90185">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="90186">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="90187">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="image" id="90188">
+			<width>53</width>
+			<height>53</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuSCC2">
+		<control type="image" id="90500">
+			<width>53</width>
+			<height>53</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90501">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90190).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90190).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+            <visible>!String.IsEmpty(Container(90190).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="90502">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90190).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90190).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90190).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="90503">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90190).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90190).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90190).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="90504">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90190).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90190).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90190).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="90505">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90190).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90190).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90190).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="90506">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90190).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90190).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90190).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="image" id="90507">
+			<width>53</width>
+			<height>53</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
 	<include name="HomeSubMenuMovies">
 		<control type="image" id="90161">
 			<width>53</width>

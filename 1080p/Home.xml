@@ -3,11 +3,35 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="String.IsEmpty(Skin.String(DefaultHomeFocusItem))">SetProperty(SetDefaultHomeItem,1,home)</onload>
 	<onload condition="!Window.Previous(Weather) + !Window.Previous(Pictures) + !Window.Previous(Games) + !Window.Previous(RadioChannels) + !Window.Previous(TVChannels) + !Window.Previous(Videos) + !Window.Previous(Music) + !Window.Previous(Programs) + !Window.Previous(Favouritesbrowser) + !Window.Previous(FileManager) + !Window.Previous(Profiles) + !Window.Previous(SystemInfo) + !Window.Previous(EventLog) + !Window.Previous(TVGuide) + !Window.Previous(TVRecordings) + !Window.Previous(TVTimerRules) + !Window.Previous(TVTimers) + !Window.Previous(TVSearch) + !Window.Previous(RadioGuide) + !Window.Previous(RadioRecordings) + !Window.Previous(RadioTimerRules) + !Window.Previous(RadioTimers) + !Window.Previous(RadioSearch) + !Window.Previous(addonbrowser) + !Window.Previous(script.globalsearch) + !Window.Previous(settings) + !Window.Previous(fullscreenvideo) + !Window.Previous(visualisation)">SetFocus(9000,$INFO[Skin.String(DefaultHomeFocus)])</onload>
-	<onunload condition="Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
+	<onunload condition="Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).Hasfocus(15) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus | ControlGroup(9018).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="ControlGroup(9011).HasFocus">SetProperty(MusicDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).HasFocus(2)">ClearProperty(VideosDirectLink)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).HasFocus(3)">ClearProperty(MusicDirectLink)</onunload>
 	<controls>
+		<control type="list" id="90180">
+			<left>-15</left>
+			<top>-15</top>
+			<width>1</width>
+			<height>1</height>
+			<viewtype label="535">list</viewtype>
+			<itemlayout height="1" width="1">
+			</itemlayout>
+			<focusedlayout height="1" width="1">
+			</focusedlayout>
+			<content target="video" limit="7">library://video/scc/</content>
+		</control>
+		<control type="list" id="90190">
+			<left>-15</left>
+			<top>-15</top>
+			<width>1</width>
+			<height>1</height>
+			<viewtype label="535">list</viewtype>
+			<itemlayout height="1" width="1">
+			</itemlayout>
+			<focusedlayout height="1" width="1">
+			</focusedlayout>
+			<content target="video" limit="7">library://video/scc2/</content>
+		</control>
 		<control type="list" id="90160">
 			<left>-15</left>
 			<top>-15</top>
@@ -771,7 +795,7 @@
 				<left>0</left>
 				<top>105</top>
 				<onup>9000</onup>
-				<ondown>9002</ondown>
+				<ondown>9007</ondown>
 				<control type="grouplist" id="9010">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9010</onleft>
@@ -779,6 +803,14 @@
 					<visible>Container(9000).HasFocus(2)</visible>
 					<!-- Buttons for the grouplist -->
 					<include>HomeSubMenuVideos</include>
+				</control>
+				<control type="grouplist" id="9018">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9018</onleft>
+					<onright>9018</onright>
+					<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90180).ListItemNoWrap(0).Label)</visible>
+					<!-- Buttons for the grouplist--> 
+					<include>HomeSubMenuSCC</include>
 				</control>
 				<control type="grouplist" id="9016">
 					<include>HomeSubMenuCommonValues</include>
@@ -851,6 +883,21 @@
 					<visible>Container(9000).HasFocus(1)</visible>
 					<!--Buttons for the grouplist -->
 					<include>HomeSubMenuAddons</include>
+				</control>
+			</control>
+			<control type="group" id="9007">
+				<depth>DepthMenu-</depth>
+				<left>0</left>
+				<top>158</top>
+				<onup>9001</onup>
+				<ondown>9002</ondown>
+				<control type="grouplist" id="9019">
+					<include>HomeSubMenuCommonValues2</include>
+					<onleft>9019</onleft>
+					<onright>9019</onright>
+					<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90190).ListItemNoWrap(0).Label)</visible>
+					<!-- Buttons for the grouplist--> 
+					<include>HomeSubMenuSCC2</include>
 				</control>
 			</control>
 			<control type="image">
@@ -994,6 +1041,14 @@
 						<thumb />
 						<visible>[!Skin.HasSetting(HomeMenuNoVideosButton) + !System.IsMaster] | [!Skin.HasSetting(MasterHomeMenuNoVideosButton) + System.IsMaster]</visible>
 					</item>
+					<item id="15">
+						<label>SCC</label>
+						<!-- <onclick>ActivateWindow(Videos,library://video/scc/,return)</onclick> -->
+						<onclick>RunAddon(plugin.video.stream-cinema-2-release)</onclick>
+						<icon/>
+						<thumb/>
+						<visible>System.HasAddon(plugin.video.stream-cinema-2-release)</visible>
+					</item>
 					<item id="10">
 						<label>31954</label>
 						<onclick condition="System.IsMaster | !Skin.HasSetting(HomeMenuMovieUsePlaylist)">ActivateWindow(Videos,MovieTitles,return)</onclick>
@@ -1060,7 +1115,7 @@
 		</control>
 		<control type="group" id="9002">
 			<depth>DepthMenu</depth>
-			<onup>9001</onup>
+			<onup>9007</onup>
 			<ondown>21</ondown>
 			<control type="list" id="700">
 				<animation effect="slide" start="0,0" end="544,0" time="0" condition="String.IsEqual(Container(700).NumItems,1)">conditional</animation>
@@ -1070,7 +1125,7 @@
 				<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)</visible>
 				<onleft>700</onleft>
 				<onright>700</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1085,7 +1140,7 @@
 				<visible>Container(9000).HasFocus(3)</visible>
 				<onleft>703</onleft>
 				<onright>703</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1100,7 +1155,7 @@
 				<visible>Container(9000).HasFocus(4)</visible>
 				<onleft>704</onleft>
 				<onright>704</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1115,7 +1170,7 @@
 				<visible>Container(9000).HasFocus(1)</visible>
 				<onleft>705</onleft>
 				<onright>705</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
@@ -1130,7 +1185,7 @@
 				<visible>Container(9000).HasFocus(14)</visible>
 				<onleft>706</onleft>
 				<onright>706</onright>
-				<onup>9001</onup>
+				<onup>9007</onup>
 				<ondown>21</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>

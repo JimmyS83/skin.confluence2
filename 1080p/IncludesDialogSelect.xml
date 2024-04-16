@@ -316,7 +316,7 @@
 	</include>
 	<include name="DialogDefaultSelectLayout">
 		<control type="group">
-			<left>353</left>
+			<left>200</left>
 			<top>113</top>
 			<animation effect="slide" start="0,0" end="0,69" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,2)]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,69" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,6)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,3)]">Conditional</animation>
@@ -325,7 +325,7 @@
 				<description>background image</description>
 				<left>0</left>
 				<top>0</top>
-				<width>1275</width>
+				<width>1475</width>
 				<height>825</height>
 				<texture border="40">$VAR[SelectBack]</texture>
 				<visible>[Control.IsVisible(3) + Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + Integer.IsGreater(Container(6).NumItems,4)]</visible>
@@ -334,7 +334,7 @@
 				<description>background image</description>
 				<left>0</left>
 				<top>0</top>
-				<width>1275</width>
+				<width>1475</width>
 				<height>687</height>
 				<texture border="40">$VAR[SelectBack]</texture>
 				<visible>[Control.IsVisible(3) + Integer.IsGreater(Container(3).NumItems,6) + !Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + Integer.IsGreater(Container(6).NumItems,3) + !Integer.IsGreater(Container(6).NumItems,4)]</visible>
@@ -343,7 +343,7 @@
 				<description>background image</description>
 				<left>0</left>
 				<top>0</top>
-				<width>1275</width>
+				<width>1475</width>
 				<height>549</height>
 				<texture border="40">$VAR[SelectBack]</texture>
 				<visible>[Control.IsVisible(3) + Integer.IsGreater(Container(3).NumItems,4) + !Integer.IsGreater(Container(3).NumItems,6)] | [Control.IsVisible(6) + Integer.IsGreater(Container(6).NumItems,2) + !Integer.IsGreater(Container(6).NumItems,3)]</visible>
@@ -352,7 +352,7 @@
 				<description>background image</description>
 				<left>0</left>
 				<top>0</top>
-				<width>1275</width>
+				<width>1475</width>
 				<height>411</height>
 				<texture border="40">$VAR[SelectBack]</texture>
 				<visible>[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,2)]</visible>
@@ -361,7 +361,7 @@
 				<description>Dialog Header image</description>
 				<left>60</left>
 				<top>24</top>
-				<width>1155</width>
+				<width>1355</width>
 				<height>60</height>
 				<texture>dialogheader.png</texture>
 			</control>
@@ -369,7 +369,7 @@
 				<description>header label</description>
 				<left>60</left>
 				<top>30</top>
-				<width>1155</width>
+				<width>1355</width>
 				<height>45</height>
 				<font>font13_title</font>
 				<label>$LOCALIZE[13406]</label>
@@ -382,13 +382,13 @@
 				<description>No Settings Label</description>
 				<left>30</left>
 				<top>180</top>
-				<width>825</width>
+				<width>1025</width>
 				<align>center</align>
 				<font>font13</font>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
-				<left>1140</left>
+				<left>1340</left>
 				<top>23</top>
 				<width>96</width>
 				<height>48</height>
@@ -402,7 +402,7 @@
 			<control type="list" id="3">
 				<left>30</left>
 				<top>101</top>
-				<width>825</width>
+				<width>1025</width>
 				<height>690</height>
 				<onup>3</onup>
 				<ondown>3</ondown>
@@ -410,18 +410,18 @@
 				<onright>61</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="69" width="825">
+				<itemlayout height="69" width="1025">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>825</width>
+						<width>1025</width>
 						<height>60</height>
 						<texture border="5">button-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<left>30</left>
 						<top>0</top>
-						<width>765</width>
+						<width>965</width>
 						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
@@ -435,7 +435,7 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>825</width>
+						<width>1025</width>
 						<height>60</height>
 						<texture border="5">button-nofocus.png</texture>
 						<visible>!Control.HasFocus(3)</visible>
@@ -444,7 +444,7 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>825</width>
+						<width>1025</width>
 						<height>60</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(3)</visible>
@@ -453,7 +453,7 @@
 					<control type="label">
 						<left>30</left>
 						<top>0</top>
-						<width>765</width>
+						<width>965</width>
 						<height>60</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
@@ -467,7 +467,7 @@
 			<control type="list" id="6">
 				<left>30</left>
 				<top>101</top>
-				<width>825</width>
+				<width>1025</width>
 				<height>690</height>
 				<onup>6</onup>
 				<ondown>6</ondown>
@@ -475,19 +475,19 @@
 				<onright>61</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="138" width="825">
+				<itemlayout height="118" width="1025">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>825</width>
-						<height>129</height>
+						<width>1025</width>
+						<height>109</height>
 						<texture border="5">button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<left>3</left>
 						<top>5</top>
-						<width>120</width>
-						<height>120</height>
+						<width>100</width>
+						<height>100</height>
 						<texture>$VAR[DialogSelectImage]</texture>
 						<aspectratio>keep</aspectratio>
 						<bordertexture infill="false" border="3">black-back2.png</bordertexture>
@@ -496,33 +496,33 @@
 					<control type="label">
 						<left>135</left>
 						<top>3</top>
-						<width>675</width>
+						<width>875</width>
 						<height>45</height>
 						<font>font13</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="textbox">
 						<left>135</left>
 						<top>51</top>
-						<width>675</width>
+						<width>875</width>
 						<height>66</height>
-						<font>font12</font>
+						<font>font13</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="138" width="825">
+				<focusedlayout height="118" width="825">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>825</width>
-						<height>129</height>
+						<width>1025</width>
+						<height>109</height>
 						<texture border="5">button-nofocus.png</texture>
 						<visible>!Control.HasFocus(6)</visible>
 						<include>VisibleFadeEffect</include>
@@ -530,8 +530,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>825</width>
-						<height>129</height>
+						<width>1025</width>
+						<height>109</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(6)</visible>
 						<include>VisibleFadeEffect</include>
@@ -539,8 +539,8 @@
 					<control type="image">
 						<left>3</left>
 						<top>5</top>
-						<width>120</width>
-						<height>120</height>
+						<width>100</width>
+						<height>100</height>
 						<texture>$VAR[DialogSelectImage]</texture>
 						<aspectratio>keep</aspectratio>
 						<bordertexture infill="false" border="3">black-back2.png</bordertexture>
@@ -549,21 +549,21 @@
 					<control type="label">
 						<left>135</left>
 						<top>3</top>
-						<width>675</width>
+						<width>875</width>
 						<height>45</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="textbox">
 						<left>135</left>
 						<top>51</top>
-						<width>675</width>
+						<width>875</width>
 						<height>66</height>
-						<font>font12</font>
+						<font>font13</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -572,7 +572,7 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="61">
-				<left>855</left>
+				<left>1055</left>
 				<top>98</top>
 				<width>38</width>
 				<height>696</height>
@@ -592,7 +592,7 @@
 			<control type="group">
 				<control type="label">
 					<description>number of files/pages in list text label</description>
-					<left>888</left>
+					<left>1088</left>
 					<top>735</top>
 					<width>360</width>
 					<height>53</height>
@@ -606,7 +606,7 @@
 					<animation effect="slide" start="0,0" end="0,-138" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,4)]">Conditional</animation>
 				</control>
 				<control type="grouplist" id="90">
-					<left>918</left>
+					<left>1118</left>
 					<top>150</top>
 					<onleft condition="Control.IsVisible(3)">3</onleft>
 					<onleft condition="Control.IsVisible(6)">6</onleft>
