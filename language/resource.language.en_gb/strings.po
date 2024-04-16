@@ -815,3 +815,8 @@ msgstr ""
 msgctxt "#50007"
 msgid "Choose Program"
 msgstr "" 
+
+#: /720p/DialogVideoInfo.xml
+msgctxt "#50008"
+msgid "ČSFD comments"
+msgstr ""

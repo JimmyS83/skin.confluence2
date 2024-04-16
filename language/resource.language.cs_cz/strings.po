@@ -833,3 +833,8 @@ msgstr "Reboot to Update"
 msgctxt "#50007"
 msgid "Choose Program"
 msgstr "Vybrat program" 
+
+#: /720p/DialogVideoInfo.xml
+msgctxt "#50008"
+msgid "ČSFD comments"
+msgstr "Komentáře ČSFD"

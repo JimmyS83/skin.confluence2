@@ -265,11 +265,13 @@
 								<label2>$INFO[ListItem.TagLine]</label2>
 								<visible>!String.IsEmpty(ListItem.TagLine)</visible>
 							</item>
+							<!--
 							<item>
 								<label>$LOCALIZE[203]:</label>
 								<label2>$INFO[ListItem.PlotOutline]</label2>
 								<visible>!String.IsEmpty(ListItem.PlotOutline)</visible>
 							</item>
+							-->
 							<item>
 								<label>$LOCALIZE[20074]:</label>
 								<label2>$INFO[ListItem.mpaa]</label2>
@@ -914,6 +916,15 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>206</label>
 					</control>
+					<control type="button" id="60">
+						<description>Comments</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>$LOCALIZE[50008]</label>
+						<onclick>SetProperty(TextViewer_Header,$ESCINFO[ListItem.Title],home)</onclick>
+						<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.PlotOutline],home)</onclick>
+						<onclick>ActivateWindow(1102)</onclick>
+						<visible>!String.IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
 					<control type="button" id="6">
 						<description>Refresh</description>
 						<include>ButtonInfoDialogsCommonValues</include>
@@ -937,12 +948,14 @@
 						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 						<visible>!String.IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
 					</control>
+					<!--
 					<control type="button" id="7">
 						<description>Set my rating</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>38023</label>
 						<visible>Control.IsEnabled(7)</visible>
 					</control>
+					-->
 					<control type="button" id="14">
 						<description>Manage versions</description>
 						<include>ButtonInfoDialogsCommonValues</include>
