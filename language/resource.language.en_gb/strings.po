@@ -810,3 +810,8 @@ msgstr ""
 msgctxt "#50006"
 msgid "Reboot to Update"
 msgstr "" 
+
+#: /720p/VideoOSD.xml
+msgctxt "#50007"
+msgid "Choose Program"
+msgstr "" 

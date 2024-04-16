@@ -828,3 +828,8 @@ msgstr "Reboot to Internal"
 msgctxt "#50006"
 msgid "Reboot to Update"
 msgstr "Reboot to Update"
+
+#: /720p/VideoOSD.xml
+msgctxt "#50007"
+msgid "Choose Program"
+msgstr "Vybrat program" 
