@@ -1,4 +1,4 @@
-# Kodi Media Center language file
+Kodi Media Center language file
 # Addon Name: Confluence
 # Addon id: skin.confluence
 # Addon Provider: Jezz_X, Team Kodi
@@ -808,3 +808,23 @@ msgstr "Pixel formát"
 msgctxt "#50002"
 msgid "EOTF & Gamut"
 msgstr "EOTF & Gamut" 
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50003"
+msgid "Restart Kodi"
+msgstr "Restartovat Kodi"
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50004"
+msgid "System restart"
+msgstr "Restartovat systém"
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50005"
+msgid "Reboot to Internal"
+msgstr "Reboot to Internal"
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50006"
+msgid "Reboot to Update"
+msgstr "Reboot to Update"

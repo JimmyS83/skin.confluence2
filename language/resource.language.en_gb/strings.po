@@ -790,3 +790,23 @@ msgstr ""
 msgctxt "#50002"
 msgid "EOTF & Gamut"
 msgstr "" 
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50003"
+msgid "Restart Kodi"
+msgstr ""
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50004"
+msgid "System restart"
+msgstr "" 
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50005"
+msgid "Reboot to Internal"
+msgstr "" 
+
+#: /720p/DialogButtonMenu.xml
+msgctxt "#50006"
+msgid "Reboot to Update"
+msgstr "" 

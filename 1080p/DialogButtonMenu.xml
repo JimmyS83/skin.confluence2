@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu">
 	<defaultcontrol>9001</defaultcontrol>
 	<include>dialogeffect</include>
@@ -13,11 +13,11 @@
 			<top>-24</top>
 			<width>6</width>
 			<height>6</height>
-			<label />
-			<font />
+			<label/>
+			<font/>
 			<onfocus>down</onfocus>
-			<texturefocus />
-			<texturenofocus />
+			<texturefocus/>
+			<texturenofocus/>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<onup>9000</onup>
@@ -58,8 +58,8 @@
 					<top>8</top>
 					<width>96</width>
 					<height>48</height>
-					<label />
-					<font />
+					<label/>
+					<font/>
 					<onclick>PreviousMenu</onclick>
 					<texturefocus>DialogCloseButton-focus.png</texturefocus>
 					<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -87,87 +87,21 @@
 				<visible>System.ShowExitButton</visible>
 			</control>
 			<control type="button" id="3">
-				<description>Shutdown button</description>
+				<description>Restart button</description>
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
-				<textwidth>435</textwidth>
+				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Powerdown()</onclick>
-				<visible>System.CanPowerDown</visible>
+				<onclick>RestartApp()</onclick>
 				<pulseonselect>false</pulseonselect>
 				<font>font13</font>
-				<label>13016</label>
+				<label>$LOCALIZE[50003]</label>
 			</control>
 			<control type="button" id="4">
-				<description>Custom Shutdown Timer</description>
-				<width>510</width>
-				<height>60</height>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>435</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
-				<pulseonselect>false</pulseonselect>
-				<font>font13</font>
-				<label>20150</label>
-				<visible>!System.HasAlarm(shutdowntimer)</visible>
-				<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
-			</control>
-			<control type="button" id="5">
-				<description>Cancel Shutdown Timer</description>
-				<width>510</width>
-				<height>60</height>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>435</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>CancelAlarm(shutdowntimer)</onclick>
-				<pulseonselect>false</pulseonselect>
-				<font>font13</font>
-				<label>20151</label>
-				<visible>System.HasAlarm(shutdowntimer)</visible>
-			</control>
-			<control type="button" id="6">
-				<description>Suspend button</description>
-				<width>510</width>
-				<height>60</height>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>435</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Suspend()</onclick>
-				<visible>System.CanSuspend</visible>
-				<pulseonselect>false</pulseonselect>
-				<font>font13</font>
-				<label>13011</label>
-			</control>
-			<control type="button" id="7">
-				<description>Hibernate button</description>
-				<width>510</width>
-				<height>60</height>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>435</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>Hibernate()</onclick>
-				<visible>System.CanHibernate</visible>
-				<pulseonselect>false</pulseonselect>
-				<font>font13</font>
-				<label>13010</label>
-			</control>
-			<control type="button" id="8">
 				<description>Reboot button</description>
 				<width>510</width>
 				<height>60</height>
@@ -181,9 +115,128 @@
 				<visible>System.CanReboot</visible>
 				<pulseonselect>false</pulseonselect>
 				<font>font13</font>
-				<label>13013</label>
+				<label>$LOCALIZE[50004]</label>
+			</control>
+			<control type="button" id="5">
+				<description>Shutdown button</description>
+				<width>510</width>
+				<height>60</height>
+				<textcolor>lightcoral</textcolor>
+				<focusedcolor>lightcoral</focusedcolor>
+				<align>center</align>
+				<textwidth>435</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>Powerdown()</onclick>
+				<visible>System.CanPowerDown</visible>
+				<pulseonselect>false</pulseonselect>
+				<font>font13</font>
+				<label>13016</label>
+			</control>
+			<control type="button" id="6">
+			<description>Reboot to Internal</description>
+			<width>510</width>
+			<height>60</height>
+			  <textcolor>tan</textcolor>
+			  <focusedcolor>tan</focusedcolor>
+			  <align>center</align>
+			  <textwidth>435</textwidth>
+			  <texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+			  <texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+			  <onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
+					<onclick>System.ExecWait("/usr/sbin/reboot")</onclick>
+					<visible>System.PathExist("/dev/env")</visible>
+			  <pulseonselect>false</pulseonselect>
+			  <font>font13</font>
+			  <label>$LOCALIZE[50005]</label>
+		  </control>
+		  <control type="button" id="7">
+			<description>Reboot to Update</description>
+			<width>510</width>
+			<height>60</height>
+			  <textcolor>tan</textcolor>
+			  <focusedcolor>tan</focusedcolor>
+			  <align>center</align>
+			  <textwidth>435</textwidth>
+			  <texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+			  <texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+					<onclick>System.ExecWait("/usr/sbin/reboot update")</onclick>
+					<visible>System.PathExist("/dev")</visible>
+			  <pulseonselect>false</pulseonselect>
+			  <font>font13</font>
+			  <label>$LOCALIZE[50006]</label>
+		  </control>
+		  <control type="button" id="8">
+				<description>Custom Shutdown Timer</description>
+				<width>510</width>
+				<height>60</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>435</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+				<pulseonselect>false</pulseonselect>
+				<font>font13</font>
+				<label>20150</label>
+				<!-- <visible>!System.HasAlarm(shutdowntimer)</visible>
+				<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible> -->
+				<visible>false</visible>
 			</control>
 			<control type="button" id="9">
+				<description>Cancel Shutdown Timer</description>
+				<width>510</width>
+				<height>60</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>435</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>CancelAlarm(shutdowntimer)</onclick>
+				<pulseonselect>false</pulseonselect>
+				<font>font13</font>
+				<label>20151</label>
+				<!-- <visible>System.HasAlarm(shutdowntimer)</visible> -->
+				<visible>false</visible>
+			</control>
+			<control type="button" id="10">
+				<description>Suspend button</description>
+				<width>510</width>
+				<height>60</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>435</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>Suspend()</onclick>
+				<!-- <visible>System.CanSuspend</visible> -->
+				<visible>false</visible>
+				<pulseonselect>false</pulseonselect>
+				<font>font13</font>
+				<label>13011</label>
+			</control>
+			<control type="button" id="11">
+				<description>Hibernate button</description>
+				<width>510</width>
+				<height>60</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>435</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>Hibernate()</onclick>
+				<!-- <visible>System.CanHibernate</visible> -->
+				<visible>false</visible>
+				<pulseonselect>false</pulseonselect>
+				<font>font13</font>
+				<label>13010</label>
+			</control>
+		  
+			<control type="button" id="12">
 				<description>Logoff button</description>
 				<width>510</width>
 				<height>60</height>
@@ -201,7 +254,7 @@
 				<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
 				<visible>System.Loggedon</visible>
 			</control>
-			<control type="togglebutton" id="10">
+			<control type="togglebutton" id="13">
 				<description>Master mode button</description>
 				<width>510</width>
 				<height>60</height>
@@ -222,7 +275,7 @@
 				<font>font13</font>
 				<visible>System.HasLocks</visible>
 			</control>
-			<control type="group" id="11">
+			<control type="group" id="14">
 				<width>510</width>
 				<height>105</height>
 				<visible>System.HasAlarm(shutdowntimer)</visible>
@@ -246,7 +299,7 @@
 					<label>$LOCALIZE[31329] [B]$INFO[System.Alarmpos][/B]</label>
 				</control>
 			</control>
-			<control type="button" id="12">
+			<control type="button" id="15">
 				<description>Inhibit idle shutdown</description>
 				<width>510</width>
 				<height>60</height>
@@ -260,9 +313,10 @@
 				<pulseonselect>false</pulseonselect>
 				<font>font13</font>
 				<label>13017</label>
-				<visible>System.HasShutdown +!System.IsInhibit</visible>
+				<!-- <visible>System.HasShutdown +!System.IsInhibit</visible> -->
+				<visible>false</visible>
 			</control>
-			<control type="button" id="13">
+			<control type="button" id="16">
 				<description>Allow idle shutdown</description>
 				<width>510</width>
 				<height>60</height>
@@ -276,9 +330,10 @@
 				<pulseonselect>false</pulseonselect>
 				<font>font13</font>
 				<label>13018</label>
-				<visible>System.HasShutdown + System.IsInhibit</visible>
+				<!-- <visible>System.HasShutdown + System.IsInhibit</visible> -->
+				<visible>false</visible>
 			</control>
-			<control type="image" id="14">
+			<control type="image" id="17">
 				<description>background bottom image</description>
 				<left>0</left>
 				<width>510</width>
