@@ -793,3 +793,18 @@ msgstr "Název profilu"
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "Avatar profilu"
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#50000"
+msgid "Display mode"
+msgstr "Mód zobrazení"
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#50001"
+msgid "Pixel format"
+msgstr "Pixel formát"
+
+#: /720p/DialogPlayerProcessInfo.xml
+msgctxt "#50002"
+msgid "EOTF & Gamut"
+msgstr "EOTF & Gamut" 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="System.HasAddon(service.coreelec.settings)">RunScript(script.amlogic.displayinfo)</onload>
 	<defaultcontrol always="true">100</defaultcontrol>
 	<include>dialogeffect</include>
 	<depth>DepthOSD</depth>
@@ -11,11 +12,21 @@
 		<control type="group">
 			<depth>DepthOSD+</depth>
 			<control type="image">
-				<description>media info background image</description>
+				<description>media info background image  with PVR</description>
+				<visible>VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
 				<left>0</left>
 				<top>0</top>
 				<width>1920</width>
-				<height>488</height>
+				<height>800</height>
+				<texture>black-back.png</texture>
+			</control>
+			<control type="image">
+				<description>media info background image</description>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>340</height>
 				<texture>black-back.png</texture>
 			</control>
 			<control type="label">
@@ -146,134 +157,248 @@
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
-				<description>Header</description>
+				<description>Display mode</description>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 				<left>75</left>
-				<top>218</top>
-				<width>848</width>
-				<height>38</height>
-				<label>$LOCALIZE[31013]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>blue</textcolor>
-			</control>
-			<control type="label">
-				<description>Decoder</description>
-				<left>75</left>
-				<top>263</top>
+				<top>211</top>
 				<width>248</width>
 				<height>38</height>
-				<label>$LOCALIZE[31012]:</label>
+				<label>$LOCALIZE[50000]:</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>grey2</textcolor>
 			</control>
 			<control type="label">
-				<description>Decoder value</description>
+				<description>Display mode value</description>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 				<left>330</left>
-				<top>263</top>
+				<top>211</top>
 				<width>675</width>
 				<height>38</height>
 				<scroll>true</scroll>
-				<label fallback="1446">$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bit]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
+				<label fallback="1446">$INFO[Window(10000).Property(amlogic.hdmitx.displaymode)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
-				<description>Channels</description>
+				<description>Pixel format</description>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 				<left>75</left>
-				<top>300</top>
+				<top>249</top>
 				<width>248</width>
 				<height>38</height>
-				<label>$LOCALIZE[19019]:</label>
+				<label>$LOCALIZE[50001]:</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>grey2</textcolor>
 			</control>
 			<control type="label">
-				<description>Channels value</description>
+				<description>Pixel format value</description>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 				<left>330</left>
-				<top>300</top>
+				<top>249</top>
 				<width>675</width>
 				<height>38</height>
 				<scroll>true</scroll>
-				<label fallback="1446">$INFO[Player.Process(audiochannels)]</label>
+				<label fallback="1446">$INFO[Window(10000).Property(amlogic.hdmitx.colourdepth)], $INFO[Window(10000).Property(amlogic.hdmitx.colourspace)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
-				<description>Header</description>
+				<description>Gamut</description>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 				<left>75</left>
-				<top>345</top>
-				<width>848</width>
-				<height>38</height>
-				<label>$LOCALIZE[138]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>blue</textcolor>
-			</control>
-			<control type="label">
-				<description>CPU</description>
-				<left>75</left>
-				<top>390</top>
+				<top>287</top>
 				<width>248</width>
 				<height>38</height>
-				<label>$LOCALIZE[13271]</label>
+				<label>$LOCALIZE[50002]:</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>grey2</textcolor>
 			</control>
 			<control type="label">
-				<description>CPU value</description>
+				<description>Gamut value</description>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 				<left>330</left>
-				<top>390</top>
+				<top>287</top>
 				<width>675</width>
 				<height>38</height>
 				<scroll>true</scroll>
-				<label>$INFO[System.CpuUsage]</label>
+				<label fallback="1446">$INFO[Window(10000).Property(amlogic.hdmitx.eotf)], $INFO[Window(10000).Property(amlogic.hdmitx.colourimetry)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 			</control>
-			<control type="label">
-				<description>Memory</description>
-				<left>75</left>
-				<top>428</top>
-				<width>248</width>
-				<height>38</height>
-				<label>$LOCALIZE[31014]:</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
-			</control>
-			<control type="label">
-				<description>Memory value</description>
-				<left>330</left>
-				<top>428</top>
-				<width>675</width>
-				<height>38</height>
-				<scroll>true</scroll>
-				<label>$INFO[System.Memory(used.percent)]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white</textcolor>
+			<control type="group">
+				<depth>DepthOSD+</depth>
+				<left>960</left>
+				<top>-200</top>
+				<control type="label">
+					<description>Header</description>
+					<left>75</left>
+					<top>218</top>
+					<width>848</width>
+					<height>38</height>
+					<label>$LOCALIZE[31013]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>blue</textcolor>
+				</control>
+				<control type="label">
+					<description>Decoder</description>
+					<left>75</left>
+					<top>263</top>
+					<width>248</width>
+					<height>38</height>
+					<label>$LOCALIZE[31012]:</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="label">
+					<description>Decoder value</description>
+					<left>330</left>
+					<top>263</top>
+					<width>675</width>
+					<height>38</height>
+					<scroll>true</scroll>
+					<label fallback="1446">$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bit]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>Channels</description>
+					<left>75</left>
+					<top>300</top>
+					<width>248</width>
+					<height>38</height>
+					<label>$LOCALIZE[19019]:</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="label">
+					<description>Channels value</description>
+					<left>330</left>
+					<top>300</top>
+					<width>675</width>
+					<height>38</height>
+					<scroll>true</scroll>
+					<label fallback="1446">$INFO[Player.Process(audiochannels)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>Header</description>
+					<left>75</left>
+					<top>345</top>
+					<width>848</width>
+					<height>38</height>
+					<label>$LOCALIZE[138]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>blue</textcolor>
+				</control>
+				<control type="label">
+					<description>CPU</description>
+					<left>75</left>
+					<top>390</top>
+					<width>248</width>
+					<height>38</height>
+					<label>$LOCALIZE[13271]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="label">
+					<description>CPU value</description>
+					<left>330</left>
+					<top>390</top>
+					<width>675</width>
+					<height>38</height>
+					<scroll>true</scroll>
+					<label>$INFO[System.CpuUsage]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>Memory</description>
+					<left>75</left>
+					<top>428</top>
+					<width>248</width>
+					<height>38</height>
+					<label>$LOCALIZE[31014]:</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="label">
+					<description>Memory value</description>
+					<left>330</left>
+					<top>428</top>
+					<width>675</width>
+					<height>38</height>
+					<scroll>true</scroll>
+					<label>$INFO[System.Memory(used.percent)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<description>CPU_temp</description>
+					<visible>System.HasAddon(service.coreelec.settings)</visible>
+					<left>75</left>
+					<top>466</top>
+					<width>248</width>
+					<height>38</height>
+					<label>$LOCALIZE[22011]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="label">
+					<description>CPU_temp value</description>
+					<visible>System.HasAddon(service.coreelec.settings)</visible>
+					<left>330</left>
+					<top>466</top>
+					<width>675</width>
+					<height>38</height>
+					<scroll>true</scroll>
+					<label>$INFO[System.CPUTemperature()]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+				</control>		
 			</control>
 		</control>
 		<control type="group">
 			<depth>DepthOSD+</depth>
 			<visible>VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
 			<left>960</left>
+			<top>300</top>
 			<control type="label">
 				<description>Header</description>
 				<left>75</left>
