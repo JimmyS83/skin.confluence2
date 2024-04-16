@@ -204,11 +204,13 @@
 							</control>
 						</focusedlayout>
 						<content>
+							<!--
 							<item>
 								<label>$LOCALIZE[40003]:</label>
 								<label2>$INFO[ListItem.VideoVersionName]</label2>
 								<visible>!String.IsEmpty(ListItem.VideoVersionName)</visible>
 							</item>
+							-->
 							<item>
 								<label>$LOCALIZE[20376]:</label>
 								<label2>$INFO[ListItem.OriginalTitle]</label2>
