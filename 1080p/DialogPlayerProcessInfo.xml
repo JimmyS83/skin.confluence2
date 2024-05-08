@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="System.HasAddon(service.coreelec.settings)">RunScript(script.amlogic.displayinfo)</onload>
 	<defaultcontrol always="true">100</defaultcontrol>
 	<include>dialogeffect</include>
 	<depth>DepthOSD</depth>
@@ -177,7 +176,7 @@
 				<width>675</width>
 				<height>38</height>
 				<scroll>true</scroll>
-				<label fallback="1446">$INFO[Window(10000).Property(amlogic.hdmitx.displaymode)]</label>
+				<label fallback="1446">$INFO[Player.Process(amlogic.displaymode)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -204,7 +203,7 @@
 				<width>675</width>
 				<height>38</height>
 				<scroll>true</scroll>
-				<label fallback="1446">$INFO[Window(10000).Property(amlogic.hdmitx.colourdepth)], $INFO[Window(10000).Property(amlogic.hdmitx.colourspace)]</label>
+				<label fallback="1446">$INFO[Player.Process(amlogic.pixformat)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -231,7 +230,7 @@
 				<width>675</width>
 				<height>38</height>
 				<scroll>true</scroll>
-				<label fallback="1446">$INFO[Window(10000).Property(amlogic.hdmitx.eotf)], $INFO[Window(10000).Property(amlogic.hdmitx.colourimetry)]</label>
+				<label fallback="1446">$INFO[Player.Process(amlogic.eoft_gamut)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>

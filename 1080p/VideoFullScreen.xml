@@ -191,7 +191,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>Studio label</description>
-					<left>20</left>
+					<left>0</left>
 					<top>45</top>
 					<width>1365</width>
 					<height>38</height>
@@ -204,7 +204,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>TV Show label</description>
-					<left>30</left>
+					<left>0</left>
 					<top>45</top>
 					<width>1365</width>
 					<height>38</height>
@@ -217,7 +217,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>Music Info label</description>
-					<left>30</left>
+					<left>0</left>
 					<top>45</top>
 					<width>1365</width>
 					<height>38</height>
@@ -230,7 +230,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>LiveTV Info label</description>
-					<left>30</left>
+					<left>0</left>
 					<top>45</top>
 					<width>1365</width>
 					<height>38</height>
@@ -242,14 +242,14 @@
 					<visible>VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording</visible>
 				</control>
 				<control type="grouplist" id="1">
-					<left>30</left>
+					<left>0</left>
 					<top>90</top>
 					<width>1365</width>
 					<height>53</height>
 					<itemgap>8</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="label" id="1">
-						<width min="15" max="662">auto</width>
+						<width min="15" max="675">auto</width>
 						<height>45</height>
 						<font>font30</font>
 						<align>left</align>
@@ -280,7 +280,7 @@
 						<height>53</height>
 						<aspectratio align="left">keep</aspectratio>
 						<texture>$INFO[VideoPlayer.HdrType,flagging/video/,.png]</texture>
-						<visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
+						<visible>!String.IsEmpty(VideoPlayer.HdrType) + !String.IsEqual(VideoPlayer.HdrType,sdr)</visible>
 					</control>
 					<control type="image" id="1">
 						<description>Audio Codec Image</description>

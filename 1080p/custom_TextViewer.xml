@@ -51,7 +51,7 @@
 					<left>210</left>
 					<top>92</top>
 					<width>1640</width>
-					<height>598</height>
+					<height>900</height>
 					<label>$INFO[Window(home).Property(TextViewer_Text)]</label>
 					<font>font13</font>
 					<align>justify</align>
@@ -63,7 +63,7 @@
 					<left>1860</left>
 					<top>90</top>
 					<width>25</width>
-					<height>600</height>
+					<height>900</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
