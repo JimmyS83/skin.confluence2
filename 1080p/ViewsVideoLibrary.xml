@@ -1624,7 +1624,7 @@
 					<description>Year Value</description>
 					<left>195</left>
 					<top>503</top>
-					<width>70</width>
+					<width>90</width>
 					<height>38</height>
 					<label fallback="-">$INFO[listitem.Year]</label>
 					<align>left</align>
@@ -1673,7 +1673,7 @@
 					<description>Aired Value</description>
 					<left>195</left>
 					<top>540</top>
-					<width>100</width>
+					<width>140</width>
 					<height>38</height>
 					<label fallback="-">$INFO[listitem.Premiered]</label>
 					<align>left</align>
