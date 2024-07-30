@@ -913,11 +913,6 @@
 						<altlabel>1024</altlabel>
 						<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,set)</usealttexture>
 					</control>
-					<control type="button" id="5">
-						<description>Cast/Review</description>
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>206</label>
-					</control>
 					<control type="button" id="60">
 						<description>Comments</description>
 						<include>ButtonInfoDialogsCommonValues</include>
@@ -926,16 +921,6 @@
 						<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.PlotOutline],home)</onclick>
 						<onclick>ActivateWindow(1102)</onclick>
 						<visible>!String.IsEmpty(ListItem.PlotOutline)</visible>
-					</control>
-					<control type="button" id="6">
-						<description>Refresh</description>
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>184</label>
-					</control>
-					<control type="button" id="10">
-						<description>Get Thumb</description>
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>13511</label>
 					</control>
 					<control type="button" id="11">
 						<description>Play Trailer</description>
@@ -950,14 +935,28 @@
 						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 						<visible>!String.IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
 					</control>
+					<control type="button" id="5">
+						<description>Cast/Review</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>206</label>
+					</control>
+					<control type="button" id="6">
+						<description>Refresh</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>184</label>
+					</control>
 					<!--
+					<control type="button" id="10">
+						<description>Get Thumb</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>13511</label>
+					</control>
 					<control type="button" id="7">
 						<description>Set my rating</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>38023</label>
 						<visible>Control.IsEnabled(7)</visible>
 					</control>
-					-->
 					<control type="button" id="14">
 						<description>Manage versions</description>
 						<include>ButtonInfoDialogsCommonValues</include>
@@ -970,6 +969,7 @@
 						<label>40211</label>
 						<visible>String.IsEqual(ListItem.DBType,movie)</visible>
 					</control>
+					-->
 				</control>
 			</control>
 		</control>
