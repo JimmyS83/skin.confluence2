@@ -9,6 +9,7 @@
 	<onunload condition="Control.HasFocus(9000) + Container(9000).HasFocus(3)">ClearProperty(MusicDirectLink)</onunload>
 	<controls>
 		<control type="list" id="90180">
+			<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release)</visible>
 			<left>-15</left>
 			<top>-15</top>
 			<width>1</width>
@@ -21,6 +22,7 @@
 			<content target="video" limit="7">library://video/scc/</content>
 		</control>
 		<control type="list" id="90190">
+			<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release)</visible>
 			<left>-15</left>
 			<top>-15</top>
 			<width>1</width>
@@ -808,7 +810,7 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9018</onleft>
 					<onright>9018</onright>
-					<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90180).ListItemNoWrap(0).Label)</visible>
+					<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90180).ListItemNoWrap(0).Label) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release)</visible>
 					<!-- Buttons for the grouplist--> 
 					<include>HomeSubMenuSCC</include>
 				</control>
@@ -895,7 +897,7 @@
 					<include>HomeSubMenuCommonValues2</include>
 					<onleft>9019</onleft>
 					<onright>9019</onright>
-					<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90190).ListItemNoWrap(0).Label)</visible>
+					<visible>Container(9000).HasFocus(15) + !String.IsEmpty(Container(90190).ListItemNoWrap(0).Label) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release)</visible>
 					<!-- Buttons for the grouplist--> 
 					<include>HomeSubMenuSCC2</include>
 				</control>
@@ -1047,7 +1049,7 @@
 						<onclick>RunAddon(plugin.video.stream-cinema-2-release)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>System.HasAddon(plugin.video.stream-cinema-2-release)</visible>
+						<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release)</visible>
 					</item>
 					<item id="10">
 						<label>31954</label>
