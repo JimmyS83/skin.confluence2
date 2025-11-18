@@ -573,7 +573,6 @@
 					<pagecontrol />
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
-					<onclick>PlayMedia($INFO[ListItem.FolderPath],isdir)</onclick>
 					<itemlayout height="330" width="300">
 						<control type="image">
 							<description>background</description>
